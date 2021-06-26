@@ -6,9 +6,9 @@ require('dotenv').config();
 const port = process.env.PORT || 5000
 
 
+app.use(cors());
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
-app.use(cors());
 
 var NounProject = require('the-noun-project'),
 nounProject = new NounProject({
