@@ -1,9 +1,9 @@
 const express = require('express')
 const app = express()
-const fetch = require('node-fetch');
-const cors  = require('cors')
 require('dotenv').config();
-const port = process.env.PORT 
+const port = process.env.PORT || 5000
+const cors  = require('cors')
+const fetch = require('node-fetch');
 
 
 app.use(cors());
