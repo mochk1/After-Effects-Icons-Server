@@ -10,8 +10,8 @@ app.use(express.json())
 
 var NounProject = require('the-noun-project'),
 nounProject = new NounProject({
-    key: '778a4df57947483c8969ab9efa302e7a',
-    secret: '3a9a4ee255b84bee812d31516255b352'
+    key: process.ENV.key,
+    secret: process.ENV.secret
 });
 
 
